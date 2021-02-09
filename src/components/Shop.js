@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import items from "./items";
 import uniqid from "uniqid";
+import "../styles/Shop.css";
 
 const Shop = () => {
     const [ itemList, setItemList ] = useState(items);

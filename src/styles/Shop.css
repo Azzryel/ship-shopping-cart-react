@@ -1,0 +1,32 @@
+.shop-container {
+    height: 100%;
+    width: 100%;
+    border: 3px solid silver;
+}
+
+.item-container {
+    display: inline-block;
+    margin: 10px;
+    height: 355px;
+    width: 350px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: lightseagreen;
+}
+
+h5 {
+    padding: 5px;
+    font-weight: bold;
+}
+
+img {
+    height: 300px;
+    width: 340px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.item-container:hover img {
+    border: 1px solid lightyellow;
+}
+
