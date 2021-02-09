@@ -36,7 +36,7 @@ const items = [
     },
     {
         name: "Whydah",
-        img: "../images/wdydah.jpg",
+        img: "../images/whydah.jpg",
         descr: "Originally launched as a slave ship from London in 1715, the Whydah was overtaken by pirates commanded by “Black Sam” Bellamy during its second voyage.  Rumored to contain treasure collected by Bellamy’s crew from more than 50 ships, the Whydah ran into a storm off the coast of Cape Cod where it hit a sandbar and sank, leaving just 2 surviving men out of 146.",
         money: generateRandomNumber(),
         id: generateItemId(),
