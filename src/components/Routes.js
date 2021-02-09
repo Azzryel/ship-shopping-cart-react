@@ -4,6 +4,7 @@ import "../styles/reset.css";
 import Nav from "./Nav";
 import App from "../App";
 import Shop from "./Shop";
+import Item from "./Item";
 
 const Routes = () => {
     return (
@@ -13,6 +14,7 @@ const Routes = () => {
                 <Switch>
                 <Route exact path="/" component={App} />
                 <Route exact path="/shop" component={Shop} />
+                <Route  path="/shop/:id" component={Item} />
                 </Switch>
             </div>
         </Router>
