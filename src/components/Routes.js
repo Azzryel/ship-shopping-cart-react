@@ -5,6 +5,7 @@ import Nav from "./Nav";
 import App from "../App";
 import Shop from "./Shop";
 import Item from "./Item";
+import Cart from "./Cart";
 
 const Routes = () => {
     return (
@@ -15,6 +16,7 @@ const Routes = () => {
                 <Route exact path="/" component={App} />
                 <Route exact path="/shop" component={Shop} />
                 <Route  path="/shop/:id" component={Item} />
+                <Route exact path="/cart" component={Cart} />
                 </Switch>
             </div>
         </Router>
