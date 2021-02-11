@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { myCart } from "./myCart";
+import { useHistory } from "react-router-dom";
 import uniqid from "uniqid";
 import "../styles/cart.css";
 
@@ -13,6 +14,7 @@ const Cart = () => {
                     return item.amount;
                     })
     const [ total, setTotal ] = useState( calculateTotal(price, amount) )
+    let history = useHistory();
 
     function calculateTotal(price, times) {
         let total = 0;
@@ -21,6 +23,11 @@ const Cart = () => {
             total += ( price[i] * times[i]); 
         }
         return total;
+    }
+
+    function setSail() {
+        alert("May the wind favor you!")
+        history.push("/");
     }
 
     return (
@@ -50,6 +57,7 @@ const Cart = () => {
                        </tr>
                        </tbody>
                    </table>
+                   <button onClick={setSail} > Buy and set sail! </button>
                </div>
            ) : (
                <div>Cart is empty</div>
