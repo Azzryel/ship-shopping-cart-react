@@ -1,0 +1,22 @@
+nav {
+    background-color: black;
+    color: white;
+    height: 50px;
+    padding: 5px;
+}
+
+span {
+    display: inline-block;
+    margin-right: 25px;
+    color: white;
+}
+
+span:hover {
+    color: royalblue;
+    border-bottom: 3px solid royalblue;
+}
+
+.link-container {
+    position: absolute;
+    right: 10px;
+}
