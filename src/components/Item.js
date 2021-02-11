@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import items from "./items";
+import { addToCart } from "./myCart";
 
 const Item = ({match}) => {
 
@@ -16,12 +17,13 @@ const Item = ({match}) => {
 
     function handleSubmit(e) {
         e.preventDefault();
-        history.push({
-            pathname: "/cart",
-            state: { 
+
+        let newItem = {
                 item,
-                amount, }
-        })
+                amount: parseInt(amount), 
+            };
+        addToCart(newItem);
+        history.push("/shop");
     }
 
     return (
@@ -35,7 +37,7 @@ const Item = ({match}) => {
                     <div>
                         <p> Price: {item.money} &#164; </p>
                         <form onSubmit={handleSubmit}>
-                            <input onChange={handleChange} type="number" max="10" min="0" defaultValue="0" />
+                            <input onChange={handleChange} type="number" max="10" min="1" defaultValue="0" />
                             <button type="submit">Add to cart</button>
                         </form>
                     </div>
