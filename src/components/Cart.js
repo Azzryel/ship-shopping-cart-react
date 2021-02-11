@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { myCart } from "./myCart";
 import uniqid from "uniqid";
+import "../styles/cart.css";
 
 const Cart = () => {
 
@@ -44,7 +45,7 @@ const Cart = () => {
                            );
                        })}
                        <tr>
-                           <th>Total</th>
+                           <th colSpan="2" >Total</th>
                            <th> {total} &#164; </th>
                        </tr>
                        </tbody>
