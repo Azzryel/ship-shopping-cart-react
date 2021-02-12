@@ -9,7 +9,6 @@ const Nav = () => {
     const location = useLocation();
 
     useEffect(() => {
-        console.log("Hey")
         update();
     }, [location]);
 
