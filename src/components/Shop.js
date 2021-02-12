@@ -9,17 +9,17 @@ const Shop = () => {
 
 
     return (
-        <div>
-            <h1>Shop</h1>
+        <div className="shop">
+            <h1>Jolly Roger Ships</h1>
 
             <div className="shop-container">
             {itemList.map( item => {
                return( 
                     <Link key={uniqid()} to={`/shop/${item.id}`} >
                     <div key={uniqid()} className="item-container">
-                        <h5 key={uniqid()}>{item.name}</h5>
+                        <h5 key={uniqid()} className="h5-shop">{item.name}</h5>
                         <img key={uniqid()} src={item.img} />
-                        <p key={uniqid()}> {item.money} &#164; </p>
+                        <p key={uniqid()} className="p-shop"> {item.money} &#164; </p>
                     </div>
                     </Link>
                );

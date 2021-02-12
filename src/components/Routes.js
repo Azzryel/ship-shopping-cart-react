@@ -10,7 +10,7 @@ import Cart from "./Cart";
 const Routes = () => {
     return (
         <Router>
-            <div>
+            <div className="cover">
                 <Nav />
                 <Switch>
                 <Route exact path="/" component={App} />

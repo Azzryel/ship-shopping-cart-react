@@ -1,22 +1,37 @@
-.shop-container {
-    height: 100%;
+.shop {
+    position: absolute;
+    background-image: url("./image.jpg");
+    background-color: lightsteelblue;
     width: 100%;
-    border: 3px solid silver;
+    height: 100%;
+}
+
+.shop-container {
+    position: absolute;
+    background-image: url("./image.jpg");
+    background-color: grey;
+    text-align: center;
+    width: 100%;
 }
 
 .item-container {
     display: inline-block;
     margin: 10px;
-    height: 355px;
+    height: 350px;
     width: 350px;
     border: 1px solid black;
     text-align: center;
-    background-color: lightseagreen;
+    background-color: lightsalmon;
 }
 
-h5 {
+.h5-shop {
     padding: 5px;
     font-weight: bold;
+    color: black;
+}
+
+.p-shop {
+    color: black;
 }
 
 img {
@@ -30,3 +45,6 @@ img {
     border: 1px solid lightyellow;
 }
 
+.item-container:hover {
+    border-radius: 20px;
+}

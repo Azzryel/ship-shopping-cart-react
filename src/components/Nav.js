@@ -19,16 +19,16 @@ const Nav = () => {
 
     return (
         <nav>
-            <h5> Jolly Roger! </h5>
+            <h5 className="h5-nav"> Jolly Roger! </h5>
             <div className="link-container"> 
             <Link to="/"  >
-                <span>Home</span>
+                <span className="nav-span">Home</span>
             </Link>
             <Link to="/shop"  >
-                <span>Shop</span>
+                <span className="nav-span">Shop</span>
             </Link>
             <Link to="/cart"  >
-                <span>Cart { (inCart>0) ? (
+                <span className="nav-span">Cart { (inCart>0) ? (
                     <em>({inCart}) </em>
                 ) : (
                     ""

@@ -21,11 +21,11 @@ h1 {
 
 }
 
-p {
+.p-home {
     padding: 25px;
 }
 
-button {
+.btn-home {
     background-color: lightcyan;
     height: 25px;
     border: none;

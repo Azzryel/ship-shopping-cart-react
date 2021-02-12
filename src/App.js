@@ -8,9 +8,9 @@ function App() {
       <h1> Welcome to Jolly Roger </h1>
 
       <div className="container">
-        <p> Get your own ship and set sails to explore the world and discover treasures!</p>
+        <p className="p-home"> Get your own ship and set sails to explore the world and discover treasures!</p>
         <Link to="/shop">
-          <button> Check it out </button>
+          <button class="btn-home"> Check it out </button>
         </Link>
       </div>
 
