@@ -31,8 +31,8 @@ const Cart = () => {
     }
 
     return (
-        <div>
-           <h2>Cart</h2>
+        <div className="cart-container">
+           <h2 className="h2-cart">Your Cart</h2>
            {(cart.length > 0) ? (
                <div>
                    <table>
@@ -57,7 +57,7 @@ const Cart = () => {
                        </tr>
                        </tbody>
                    </table>
-                   <button onClick={setSail} > Buy and set sail! </button>
+                   <button onClick={setSail} className="buy-btn" > Buy and set sail! </button>
                </div>
            ) : (
                <div>Cart is empty</div>
