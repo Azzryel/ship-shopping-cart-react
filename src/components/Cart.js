@@ -60,7 +60,7 @@ const Cart = () => {
                    <button onClick={setSail} className="buy-btn" > Buy and set sail! </button>
                </div>
            ) : (
-               <div>Cart is empty</div>
+               <div className="empty">Cart is empty</div>
            ) }
         </div>
     )
