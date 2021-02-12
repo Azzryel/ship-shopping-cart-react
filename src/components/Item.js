@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import items from "./items";
 import { addToCart } from "./myCart";
+import "../styles/item.css";
 
 const Item = ({match}) => {
 
@@ -27,15 +28,15 @@ const Item = ({match}) => {
     }
 
     return (
-        <div>
+        <div className="big-container">
             {(Boolean(item)) ? (
-            <div>
-            <h2> {item.name} </h2>
-                <div>
-                    <img src={item.img} />
+            <div className="container-itm">
+            <h2 className="h2-item"> {item.name} </h2>
+                <div className="small-container">
+                    <img src={item.img} id="display"/>
 
-                    <div>
-                        <p> Price: {item.money} &#164; </p>
+                    <div className="pricetag">
+                        <p className="price"> Price: {item.money} &#164; </p>
                         <form onSubmit={handleSubmit}>
                             <input onChange={handleChange} type="number" max="10" min="1" defaultValue="0" />
                             <button type="submit">Add to cart</button>
@@ -43,7 +44,7 @@ const Item = ({match}) => {
                     </div>
                     
 
-                    <p> {item.descr} </p>
+                    <p className="descr"> {item.descr} </p>
 
                 </div>
                 </div>
