@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ship-shopping-cart-react/static/css/main.e5c1cadd.chunk.css",
+    "main.js": "/ship-shopping-cart-react/static/js/main.9b478bf8.chunk.js",
+    "main.js.map": "/ship-shopping-cart-react/static/js/main.9b478bf8.chunk.js.map",
+    "runtime-main.js": "/ship-shopping-cart-react/static/js/runtime-main.92c0509b.js",
+    "runtime-main.js.map": "/ship-shopping-cart-react/static/js/runtime-main.92c0509b.js.map",
+    "static/js/2.989c537e.chunk.js": "/ship-shopping-cart-react/static/js/2.989c537e.chunk.js",
+    "static/js/2.989c537e.chunk.js.map": "/ship-shopping-cart-react/static/js/2.989c537e.chunk.js.map",
+    "index.html": "/ship-shopping-cart-react/index.html",
+    "static/css/main.e5c1cadd.chunk.css.map": "/ship-shopping-cart-react/static/css/main.e5c1cadd.chunk.css.map",
+    "static/js/2.989c537e.chunk.js.LICENSE.txt": "/ship-shopping-cart-react/static/js/2.989c537e.chunk.js.LICENSE.txt",
+    "static/media/app.css": "/ship-shopping-cart-react/static/media/coast-sea-cliff.7e78d1e4.jpg",
+    "static/media/cart.css": "/ship-shopping-cart-react/static/media/image.ddfc3e3f.jpg",
+    "static/media/Shop.css": "/ship-shopping-cart-react/static/media/sea.d008e219.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.92c0509b.js",
+    "static/js/2.989c537e.chunk.js",
+    "static/css/main.e5c1cadd.chunk.css",
+    "static/js/main.9b478bf8.chunk.js"
+  ]
+}
